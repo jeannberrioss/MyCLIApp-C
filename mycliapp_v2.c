@@ -1,8 +1,3 @@
-/* The code here creates a square and then
-animates it by adding in 0's for each row.
-Then after the next row of 0's is genereated below
-it converts the prior row of 0's to 1's */
-
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -88,7 +83,8 @@ void generate_rows(char grid[SQUARE_HEIGHT][SQUARE_WIDTH]) {
         }
     }
 
-    // Convert last row to '1's
+    // Ensure the last row transitions from 'O' to '1'
+    sleep(2); // Wait 2 seconds
     grid[row_positions[4]][7] = '1';
     grid[row_positions[4]][8] = '1';
     grid[row_positions[4]][9] = '1';
