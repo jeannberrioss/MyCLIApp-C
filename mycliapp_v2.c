@@ -1,3 +1,8 @@
+/* The code here creates a square and then
+animates it by adding in 0's for each row.
+Then after the next row of 0's is genereated below
+it converts the prior row of 0's to 1's */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -42,14 +47,19 @@ void print_final_frame() {
     printf("Here is the final frame:\n");
 }
 
-// Square Functions
+// Optimized Print Square Function
 void print_square(char grid[SQUARE_HEIGHT][SQUARE_WIDTH]) {
+    static char buffer[SQUARE_HEIGHT * (SQUARE_WIDTH + 1)]; // +1 for newline
+    int index = 0;
+
     for (int i = 0; i < SQUARE_HEIGHT; i++) {
         for (int j = 0; j < SQUARE_WIDTH; j++) {
-            printf("%c", grid[i][j]);
+            buffer[index++] = grid[i][j];
         }
-        printf("\n");
+        buffer[index++] = '\n'; // Add newline after each row
     }
+
+    printf("%s", buffer); // Print the entire grid at once
 }
 
 // Row Functions
