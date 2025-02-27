@@ -1,0 +1,27 @@
+[
+  {
+    "MyTable-v1": "salesforce.salesforcedx-vscode",
+    "MyTable-v2": "salesforce.salesforcedx-vscode",
+    "MyTable-v3": "salesforce.salesforcedx-vscode"
+  },
+  {
+    "MyTable-v1": "redhat.vscode-xml",
+    "MyTable-v2": "redhat.vscode-xml",
+    "MyTable-v3": "redhat.vscode-xml"
+  },
+  {
+    "MyTable-v1": "dbaeumer.vscode-eslint",
+    "MyTable-v2": "dbaeumer.vscode-eslint",
+    "MyTable-v3": "dbaeumer.vscode-eslint"
+  },
+  {
+    "MyTable-v1": "esbenp.prettier-vscode",
+    "MyTable-v2": "esbenp.prettier-vscode",
+    "MyTable-v3": "esbenp.prettier-vscode"
+  },
+  {
+    "MyTable-v1": "financialforce.lana",
+    "MyTable-v2": "financialforce.lana",
+    "MyTable-v3": "financialforce.lana"
+  }
+]
